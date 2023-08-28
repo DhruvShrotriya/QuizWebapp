@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>html</title>
+  <link rel="stylesheet" type="text/css" href="./../css/cssLearnMore.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+
+<body style="background-color: hsl(206, 92%, 94%);">
+
+  <a href="./../index.html" class="top-btn">
+    <i class="fa-sharp fa-solid fa-circle-arrow-left"></i>
+  </a>
+  <div class="container-fluid">
+    <div class="row shadow p-3 mb-5  rounded mt-3">
+      <div class="col-6">
+        <h1 class="text-warning"> <img src="./../assest/css-img.png" class="img"> CSS</h1>
+        <b>Something here...</b><br />
+        <b>CSS is the language we use to style an HTML document..</b><br />
+        <b>here we learn some basic css...</b>
+      </div>
+    </div>
+    <div class="container-lg ms-5">
+      <h3>What is css ?</h3><br />
+      <p>CSS stands for Cascading Style Sheets.<br />
+        CSS describes how HTML elements are to be displayed on screen, paper, or in other media<br />
+        CSS saves a lot of work. It can control the layout of multiple web pages all at once<br />
+        External stylesheets are stored in CSS files<br />
+      </p>
+      <h3>Css Syntax :</h3><br />
+      <hr>
+      <br />
+      <b> p {
+        color: red;
+        text-align: center;
+        }
+      </b><br />
+      Example Explained :<br />
+      p is a selector in CSS (it points to the HTML element you want to style: <p>).<br />
+        color is a property, and red is the property value<br />
+        text-align is a property, and center is the property value<br />
+        <hr><br />
+      <p>The selector points to the HTML element you want to style.
+
+        The declaration block contains one or more declarations separated by semicolons.
+
+        Each declaration includes a CSS property name and a value, separated by a colon.
+
+        Multiple CSS declarations are separated with semicolons, and declaration blocks are surrounded by curly braces.
+      </p>
+      <br />
+      <h3> CSS Selectors :</h3><br />
+      CSS selectors are used to "find" (or select) the HTML elements you want to style.
+
+      <br />We can divide CSS selectors into five categories:
+      <br /><br />
+      <br /> Simple selectors (select elements based on name, id, class)
+      <br /> Combinator selectors (select elements based on a specific relationship between them)
+      <br /> Pseudo-class selectors (select elements based on a certain state)
+      <br /> Pseudo-elements selectors (select and style a part of an element)
+      <br /> Attribute selectors (select elements based on an attribute or attribute value)
+      <br /> This page will explain the most basic CSS selectors.
+      <br /><br />
+      <h3>How to add css?</h3>
+      <br />When a browser reads a style sheet, it will format the HTML document according to the information in the
+      style sheet.
+      <h4>Three ways to add css</h4>
+      There are three ways of inserting a style sheet :<br />
+      1) External CSS<br />
+      2) Internal CSS<br />
+      3) Inline CSS<br /><br />
+      <h4>External css :</h4><br />
+      <p>With an external style sheet, you can change the look of an entire website by changing just one file!
+
+        Each HTML page must include a reference to the external style sheet file inside the &lt;link&gt; element, inside
+        the head section.</p>
+      Example :<br />
+      External styles are defined within the &lt;link&gt; element, inside the &lt;head&gt; section of an HTML page:
+      <hr><b>
+        &lt;!DOCTYPE html&gt;<br />
+        &lt;html&gt;<br />
+        &lt;head&gt;<br />
+        &lt;link rel="stylesheet" href="mystyle.css"&gt;<br />
+        &lt;/head&gt;<br />
+        &lt;body&gt;<br />
+
+        &lt;h1&gt;This is a heading&lt;/h1&gt;<br />
+        &lt;p&gt;This is a paragraph.&lt;/p&gt;<br />
+
+        &lt;/body &gt;<br />
+        &lt;/html &gt;<br />
+        <hr>
+      </b>
+      <br /><br />
+      <h3>Inline css :</h3><br />
+      An inline style may be used to apply a unique style for a single element.
+
+      To use inline styles, add the style attribute to the relevant element. The style attribute can contain any CSS
+      property.
+      <br />
+      Example :<br />
+      Inline styles are defined within the "style" attribute of the relevant element:<br />
+      <hr><b>
+        &lt;!DOCTYPE html&gt;<br />
+        &lt;html&gt;<br />
+        &lt;head&gt;<br />
+
+        &lt;/head&gt;<br />
+        &lt;body&gt;<br />
+
+        &lt;h1 style ="color:blue;text-align:center;"&gt;This is a heading&lt;/h1&gt;<br />
+        &lt;p style="color:red;"&gt;This is a paragraph.&lt;/p&gt;<br />
+
+        &lt;/body &gt;<br />
+        &lt;/html &gt;<br />
+        <hr>
+      </b>
+      <h3>Internal css :</h3>
+      <p>Internal CSS
+        An internal style sheet may be used if one single HTML page has a unique style.
+
+        The internal style is defined inside the &lt;style&gt; element, inside the head section.</p><br />
+      <b>
+        <hr>
+        &lt;!DOCTYPE html&gt;<br />
+        &lt;html&gt;<br />
+        &lt;head&gt;<br />
+        &lt;style&gt;
+        body {<br />
+        background-color: linen;<br />
+        }<br />
+
+        h1 {<br />
+
+        color: maroon;<br />
+        margin-left: 40px;<br />
+        }
+        &lt;/style&gt;<br />
+        &lt;/head&gt;<br />
+        &lt;body&gt;<br />
+        &lt;h1&gt;This is a heading&lt;/h1&gt;<br />
+        &lt;p&gt;This is a paragraph.&lt;/p&gt;<br />
+
+        &lt;/body &gt;<br />
+        &lt;/html &gt;<br />
+      </b>
+      <hr>
+      <br /><br />
+      <h3>Css comment's :</h3>
+      <p>CSS Comments
+        Comments are used to explain the code, and may help when you edit the source code at a later date.
+
+        Comments are ignored by browsers.
+
+        A CSS comment is placed inside the &lt;style&gt; element, and starts with /* and ends with */:</p>
+
+      <hr>
+      <b>/* This is a single-line comment */<br />
+        p {<br />
+        color: red;<br />
+        }</b><br/>
+      <br />
+      <h3>Html color's :</h3>
+      <p>Colors are specified using predefined color names, or RGB, HEX, HSL, RGBA, HSLA values.</p><br />
+      <h4>CSS Background Color</h4><br />
+
+      <hr> <b>&lt;h1 style="background-color:DodgerBlue;"&gt;Hello World&lt;/h1&gt;<br /></b><br />
+      <hr>
+      <h4>CSS Text Color :</h4>
+      <p>You can set the color of text:</p>
+      <hr> <b> &lt;h1 style="color:Tomato;"&gt;Hello World&lt;/h1&gt;</b><br /><br />
+      <hr>
+      <h4>CSS border Color :</h4>
+      <p>You can set the color of borders:</p><br />
+      <hr><b>&lt;h1 style="border:2px solid Tomato;"&gt;Hello World&lt;/h1&gt;</b><br />
+      <hr>
+      <h4>css color values :</h4>
+      <p>In CSS, colors can also be specified using RGB values, HEX values, HSL values, RGBA values, and HSLA values:
+      </p>
+
+      <hr><b>&lt;h1 style="background-color:rgb(255, 99, 71);"&gt;...&lt;/h1&gt;</b><br />
+      <hr><br />
+      <h3>css RGB values :</h3>
+      An RGB color value represents RED, GREEN, and BLUE light sources.
+      <h4>RGB value :</h4>
+      <p>RGB Value
+        In CSS, a color can be specified as an RGB value, using this formula:<br />
+
+        rgb(red, green, blue)<br />
+
+        Each parameter (red, green, and blue) defines the intensity of the color between 0 and 255.<br />
+
+        For example, rgb(255, 0, 0) is displayed as red, because red is set to its highest value (255) and the others
+        are set to 0.<br />
+
+        To display black, set all color parameters to 0, like this: rgb(0, 0, 0).<br />
+
+        To display white, set all color parameters to 255, like this: rgb(255, 255, 255).<br />
+
+        Experiment by mixing the RGB values below:</p><br />
+      <h4>RGBA value</h4>
+      <p>RGBA Value
+        RGBA color values are an extension of RGB color values with an alpha channel - which specifies the opacity for a
+        color.<br />
+
+        An RGBA color value is specified with:<br />
+
+        rgba(red, green, blue, alpha)<br />
+
+        The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (not transparent at all):</p><br />
+      <h3>css HEX values</h3>
+      <h4>HEX values</h4>
+      In CSS, a color can be specified using a hexadecimal value in the form:<br />
+
+      #rrggbb<br />
+
+      Where rr (red), gg (green) and bb (blue) are hexadecimal values between 00 and ff (same as decimal 0-255).
+
+      For example, #ff0000 is displayed as red, because red is set to its highest value (ff) and the others are set to
+      the lowest value (00).
+
+      To display black, set all values to 00, like this: #000000.
+
+      To display white, set all values to ff, like this: #ffffff. <br /><br />
+      <h3>CSS HSL Colors</h3>
+      HSL stands for hue, saturation, and lightness.
+      <h4>HSL values :</h4>
+      <p>HSL Value
+        In CSS, a color can be specified using hue, saturation, and lightness (HSL) in the form:<br />
+
+        hsl(hue, saturation, lightness)
+
+        Hue is a degree on the color wheel from 0 to 360. 0 is red, 120 is green, and 240 is blue.<br />
+
+        Saturation is a percentage value. 0% means a shade of gray, and 100% is the full color.<br />
+
+        Lightness is also a percentage. 0% is black, 50% is neither light or dark, 100% is white</p><br /><br />
+      <h3>Css background</h3>
+      <p>The CSS background properties are used to add background effects for elements</p>
+      1. background-color<br />
+      2.background-image<br />
+      3.background-repeat<br />
+      4.background-attachment<br />
+      5.background-position<br />
+      6.background (shorthand property)<br />

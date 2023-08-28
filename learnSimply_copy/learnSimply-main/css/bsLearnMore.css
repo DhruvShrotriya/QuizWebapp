@@ -1,0 +1,21 @@
+.img{
+    width: 40px;
+    border-radius: 5px;
+}
+
+.top-btn{
+    color:black;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    padding: 5px;
+    border-radius: 50%;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 25px;
+}
+.top-btn:hover{
+    box-shadow: 0 0 10px 3px gray;
+    cursor: pointer;
+    color: #000;
+}
