@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="css\quiz_style.css">
+    <script src="js\htmlquiz.js"></script>
+    <script src="js\app.js"></script>
+</head>
+<body>
+    <div id="main">
+        <div class="box">
+            <div id="quesno" class="quesno"><br>
+                <!-- <hr> -->
+            </div>
+            <div id="ques"><h2>Question</h2></div>
+            <!-- <h2>Question</h2> -->
+            <div id="ans">
+                <div class="op"> <input type="radio" name="option" id="op0" value="0">
+                    <label for="ans" id="l0">Option0</label>
+                </div>
+                <div class="op"> <input type="radio" name="option" id="op1" value="1">
+                    <label for="ans" id="l1">Option1</label>
+                </div>
+                <div class="op"> <input type="radio" name="option" id="op2" value="2">
+                    <label for="ans" id="l2">Option2</label>
+                </div>
+                <div class="op"> <input type="radio" name="option" id="op3" value="3">
+                    <label for="ans" id="l3 ">Option4</label>
+                </div>
+            </div>
+            <button type="button" class="btn" onclick="next()">Next</button>
+            
+        </div>
+    </div>
+</body>
+</html>
