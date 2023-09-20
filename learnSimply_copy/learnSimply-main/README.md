@@ -1,2 +1,0 @@
-# learnSimply
-![Screenshot](Screenshot.png)
