@@ -4,6 +4,8 @@ const questionNumber = document.getElementById("quesno");
 const quesText = document.getElementById("ques");
 const optionCont= document.getElementById("ans");
 const quizlen=10;
+const qt="CSS";
+fname=qt+"quiz"
 let res={
     name: "Dhruv",
     age: 18,
@@ -28,7 +30,6 @@ function getQueryVariable(variable) {
     return null;
 }
 res.name = getQueryVariable("name");
-
 const qtype = getQueryVariable("qtype");
 function getQueryVariable(variable) {
     const query = window.location.search.substring(1);

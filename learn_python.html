@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Learn Python</title>
+	<link rel="stylesheet" href="css\learn_style.css">
+	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="sidebar">
+        <h2>Python</h2>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="#intro">What is Python</a></li>
+            <li><a href="#syntax"></i>Python Datatypes</a></li>
+            <li><a href="#attribute"></i>Python Operator</a></li>
+            <!-- <li><a href="#model"></i>Box Model</a></li> -->
+            
+        </ul> 
+    </div>
+    <div class="main_content">
+        <div class="header">Introduction</div>
+        <div class="info"> <p class="subhead"></p> <img src="assest/Python-logo-notext.svg.png" alt="csslogo" style="float: right;" height="150px">
+        <p>Python tutorial provides basic and advanced concepts of Python. Our Python tutorial is designed for beginners and professionals.
+
+            Python is a simple, general purpose, high level, and object-oriented programming language.
+            
+            Python is an interpreted scripting language also. Guido Van Rossum is known as the founder of Python programming.
+            
+            Our Python tutorial includes all topics of Python Programming such as installation, control statements, Strings, Lists, Tuples, Dictionary, Modules, Exceptions, Date and Time, File I/O, Programs, etc. There are also given Python interview questions to help you better understand Python Programming.</div>
+        <div class="header"><a name="intro">What is Python</a></div>
+        <div class="info">
+            <div class="sub">
+                Python is a general-purpose, dynamic, high-level, and interpreted programming language. It supports Object Oriented programming approach to develop applications. It is simple and easy to learn and provides lots of high-level data structures.
+<p>Python is an easy-to-learn yet powerful and versatile scripting language, which makes it attractive for Application Development.</p><p>With its interpreted nature, Python's syntax and dynamic typing make it an ideal language for scripting and rapid application development.
+</p><p>Python is not intended to work in a particular area, such as web programming. It is a multipurpose programming language because it can be used with web, enterprise, 3D CAD, etc.</p><p>We don't need to use data types to declare variable because it is dynamically typed, so we can write a=10 to assign an integer value in an integer variable.</p>
+<p>Python is an open-source, cost-free programming language. It is utilized in several sectors and disciplines as a result.
+
+    In Python, code readability and maintainability are important. As a result, even if the code was developed by someone else, it is easy to understand and adapt by some other developer.
+    
+    Python has many third-party libraries that can be used to make its functionality easier. These libraries cover many domains, for example, web development, scientific computing, data analysis, and more.</p>
+            </div>
+<div class="sub"><p class="subhead">Why learn Python?</p>
+    Python provides many useful features to the programmer. These features make it the most popular and widely used language. <br>We have listed below few-essential features of Python.
+
+    <ul class="points">
+        <li><strong>&nbsp;&nbsp; 1. Easy to use and Learn:</strong> Python has a simple and easy-to-understand syntax, unlike traditional languages like C, C++, Java, etc., making it easy for beginners to learn.</li>
+        <li><strong>&nbsp;&nbsp; 2. Expressive Language:</strong> It allows programmers to express complex concepts in just a few lines of code or reduces Developer's Time.</li>
+        <li><strong>&nbsp;&nbsp; 3. Interpreted Language:</strong> Python does not require compilation, allowing rapid development and testing. It uses Interpreter instead of Compiler.</li>
+        <li><strong>&nbsp;&nbsp; 4. Object-Oriented Language:</strong> It supports object-oriented programming, making writing reusable and modular code easy.</li>
+        <li><strong>&nbsp;&nbsp; 5. Open Source Language:</strong> Python is open source and free to use, distribute and modify.</li>
+        <li><strong>&nbsp;&nbsp; 6. Extensible:</strong> Python can be extended with modules written in C, C++, or other languages.</li>
+        <li><strong>&nbsp;&nbsp; 7. GUI Programming Support:</strong> Python provides several GUI frameworks, such as Tkinter and PyQt, allowing developers to create desktop applications easily.</li>
+        <li><strong>&nbsp;&nbsp; 8. Integrated:</strong> Python can easily integrate with other languages and technologies, such as C/C++, Java, and . NET.</li>
+        <li><strong>&nbsp;&nbsp; 9. Embeddable:</strong> Python code can be embedded into other applications as a scripting language.</li>
+        <li><strong>&nbsp;&nbsp; 10. Dynamic Memory Allocation:</strong> Python automatically manages memory allocation, making it easier for developers to write complex programs without worrying about memory &nbsp;&nbsp;management.</li>
+        <li><strong>&nbsp;&nbsp; 11. Wide Range of Libraries and Frameworks:</strong> Python has a vast collection of libraries and frameworks, such as NumPy, Pandas, Django, and Flask, that can be used to solve a &nbsp;&nbsp;wide range of problems.</li>
+        <li><strong>&nbsp;&nbsp; 12. Big Data and Machine Learning:</strong> Python has become the go-to language for big data and machine learning. Python has become popular among data scientists and &nbsp;&nbsp;machine learning engineers with libraries like NumPy, Pandas, Scikit-learn, TensorFlow, and more.</li>
+        </ul>
+
+
+</div>
+        </div>
+        <div class="header"><a name="syntax">Python Datatype</a></div>
+        <div class="info">
+            <div class="sub">
+                Every value has a datatype, and variables can hold values. Python is a powerfully composed language; consequently, we don't have to characterize the sort of variable while announcing it. The interpreter binds the value implicitly to its type
+                <pre>a = 5</pre>
+                We did not specify the type of the variable a, which has the value five from an integer. The Python interpreter will automatically interpret the variable as an integer.
+
+We can verify the type of the program-used variable thanks to Python. The type() function in Python returns the type of the passed variable.
+
+Consider the following illustration when defining and verifying the values of various data types.
+<pre>a=10  
+b="Hi Python"  
+c = 10.5  
+print(type(a))  
+print(type(b))  
+print(type(c))  </pre>
+<br><b>Output</b><pre>&lt;type 'int'> 
+&lt;type 'str'>
+&lt;type 'float'></pre>
+            </div>
+        <div class="sub">
+            <p class="subhead"> Standard data types</p>
+            A variable can contain a variety of values. On the other hand, a person's id must be stored as an integer, while their name must be stored as a string.
+<br>
+            The storage method for each of the standard data types that Python provides is specified by Python. The following is a list of the Python-defined data types.
+            <ol class="points">
+                <li>&nbsp;&nbsp; 1. Numbers</a></li>
+                <li>&nbsp;&nbsp; 2. Sequence Type</a></li>
+                <li>&nbsp;&nbsp; 3. Boolean</a></li>
+                <li>&nbsp;&nbsp; 4. Set</a></li>
+                <li>&nbsp;&nbsp; 5. Dictionary</a></li>
+                </ol>
+        </div>
+        
+        </div>
+        <div class="header"><a name="attribute">Python Operators</a></div>
+        <div class="info">
+            <div class="sub">
+                In this article, we are discussing Python Operators. The operator is a symbol that performs a specific operation between two operands, according to one definition. Operators serve as the foundation upon which logic is constructed in a program in a particular programming language. In every programming language, some operators perform several tasks
+        </div>
+        <div class="sub">
+        <p class="subhead">Arithmetic Operators</p>Arithmetic operators used between two operands for a particular operation. There are many arithmetic operators. It includes the exponent (**) operator as well as the + (addition), - (subtraction), * (multiplication), / (divide), % (reminder), and // (floor division) operators.
+      <br>Consider the following table for a detailed explanation of arithmetic operators.
+      <table class="alt">
+        <tbody><tr>
+        <th>Operator</th>
+        <th>Description</th>
+        </tr>
+        <tr>
+        <td><strong>+ (Addition)</strong></td>
+        <td>It is used to add two operands. For example, if a = 10, b = 10 =&gt; a+b = 20</td>
+        </tr>
+        <tr>
+        <td><strong>- (Subtraction)</strong></td>
+        <td>It is used to subtract the second operand from the first operand. If the first operand is less than the second operand, the value results negative. For example, if a = 20, b = 5 =&gt; a - b = 15</td>
+        </tr>
+        <tr>
+        <td><strong>/ (divide)</strong></td>
+        <td>It returns the quotient after dividing the first operand by the second operand. For example, if a = 20, b = 10 =&gt; a/b = 2.0</td>
+        </tr>
+        <tr>
+        <td><strong>* (Multiplication)</strong></td>
+        <td>It is used to multiply one operand with the other. For example, if a = 20, b = 4 =&gt; a * b = 80</td>
+        </tr>
+        <tr>
+        <td><strong>% (reminder)</strong></td>
+        <td>It returns the reminder after dividing the first operand by the second operand. For example, if a = 20, b = 10 =&gt; a%b = 0</td>
+        </tr>
+        <tr>
+        <td><strong>** (Exponent)</strong></td>
+        <td>As it calculates the first operand's power to the second operand, it is an exponent operator.</td>
+        </tr>
+        <tr>
+        <td><strong>// (Floor division)</strong></td>
+        <td>It provides the quotient's floor value, which is obtained by dividing the two operands.</td>
+        </tr>
+        </tbody></table><br>
+        <b>Example</b>
+<pre>
+    a = 32    # Initialize the value of a  
+    b = 6      # Initialize the value of b  
+    print('Addition of two numbers:',a+b)  
+    print('Subtraction of two numbers:',a-b)  
+    print('Multiplication of two numbers:',a*b)  
+    print('Division of two numbers:',a/b)  
+    print('Reminder of two numbers:',a%b)  
+    print('Exponent of two numbers:',a**b)  
+    print('Floor division of two numbers:',a//b)  
+</pre><br><b>Output</b>
+<pre>
+    Addition of two numbers: 38
+    Subtraction of two numbers: 26
+    Multiplication of two numbers: 192
+    Division of two numbers: 5.333333333333333
+    Reminder of two numbers: 2
+    Exponent of two numbers: 1073741824
+    Floor division of two numbers: 5
+</pre>
+        </div>
+        <div class="sub"><p class="subhead"> Assignment Operators</p>
+            Using the assignment operators, the right expression's value is assigned to the left operand. There are some examples of assignment operators like =, +=, -=, *=, %=, **=, //=. In the below table, we explain the works of the operators.
+            <table class="alt">
+                <tbody><tr>
+                <th>Operator</th>
+                <th>Description</th>
+                </tr>
+                <tr>
+                <td>=</td>
+                <td>It assigns the value of the right expression to the left operand.</td>
+                </tr>
+                <tr>
+                <td>+= </td>
+                <td>By multiplying the value of the right operand by the value of the left operand, the left operand receives a changed value. For example, if a = 10, b = 20 =&gt; a+ = b will be equal to a = a+ b and therefore, a = 30.</td>
+                </tr>
+                <tr>
+                <td>-=</td>
+                <td>It decreases the value of the left operand by the value of the right operand and assigns the modified value back to left operand. For example, if a = 20, b = 10 =&gt; a- = b will be equal to a = a- b and therefore, a = 10.</td>
+                </tr>
+                <tr>
+                <td>*=</td>
+                <td>It multiplies the value of the left operand by the value of the right operand and assigns the modified value back to then the left operand. For example, if a = 10, b = 20 =&gt; a* = b will be equal to a = a* b and therefore, a = 200.</td>
+                </tr>
+                <tr>
+                <td>%=</td>
+                <td>It divides the value of the left operand by the value of the right operand and assigns the reminder back to the left operand. For example, if a = 20, b = 10 =&gt; a % = b will be equal to a = a % b and therefore, a = 0.</td>
+                </tr>
+                <tr>
+                <td>**=</td>
+                <td>a**=b will be equal to a=a**b, for example, if a = 4, b =2, a**=b will assign 4**2 = 16 to a.</td>
+                </tr>
+                <tr>
+                <td>//=</td>
+                <td>A//=b will be equal to a = a// b, for example, if a = 4, b = 3, a//=b will assign 4//3 = 1 to a.</td>
+                </tr>
+                </tbody></table>
+                <br><b>Example</b>
+<pre>
+    a = 32         # Initialize the value of a  
+    b = 6          # Initialize the value of b  
+    print('a=b:', a==b)  
+    print('a+=b:', a+b)  
+    print('a-=b:', a-b)  
+    print('a*=b:', a*b)  
+    print('a%=b:', a%b)  
+    print('a**=b:', a**b)  
+    print('a//=b:', a//b)  
+</pre><br><b>Output :</b>
+<pre>
+    a=b: False
+    a+=b: 38
+    a-=b: 26
+    a*=b: 192
+    a%=b: 2
+    a**=b: 1073741824
+    a//=b: 5
+</pre>
+        </div>
+        
+       
+        <!-- <div class="header"><a name=""></a></div> -->
+        <!-- <div class="header">Welcome!! Have a nice day.</div>  
+        <div class="info">
+          <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A sed nobis ut exercitationem atque accusamus sit natus officiis totam blanditiis at eum nemo, nulla et quae eius culpa eveniet voluptatibus repellat illum tenetur, facilis porro. Quae fuga odio perferendis itaque alias sint, beatae non maiores magnam ad, veniam tenetur atque ea exercitationem earum eveniet totam ipsam magni tempora aliquid ullam possimus? Tempora nobis facere porro, praesentium magnam provident accusamus temporibus! Repellendus harum veritatis itaque molestias repudiandae ea corporis maiores non obcaecati libero, unde ipsum consequuntur aut consectetur culpa magni omnis vero odio suscipit vitae dolor quod dignissimos perferendis eos? Consequuntur!</div>
+          <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A sed nobis ut exercitationem atque accusamus sit natus officiis totam blanditiis at eum nemo, nulla et quae eius culpa eveniet voluptatibus repellat illum tenetur, facilis porro. Quae fuga odio perferendis itaque alias sint, beatae non maiores magnam ad, veniam tenetur atque ea exercitationem earum eveniet totam ipsam magni tempora aliquid ullam possimus? Tempora nobis facere porro, praesentium magnam provident accusamus temporibus! Repellendus harum veritatis itaque molestias repudiandae ea corporis maiores non obcaecati libero, unde ipsum consequuntur aut consectetur culpa magni omnis vero odio suscipit vitae dolor quod dignissimos perferendis eos? Consequuntur!</div>
+          <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A sed nobis ut exercitationem atque accusamus sit natus officiis totam blanditiis at eum nemo, nulla et quae eius culpa eveniet voluptatibus repellat illum tenetur, facilis porro. Quae fuga odio perferendis itaque alias sint, beatae non maiores magnam ad, veniam tenetur atque ea exercitationem earum eveniet totam ipsam magni tempora aliquid ullam possimus? Tempora nobis facere porro, praesentium magnam provident accusamus temporibus! Repellendus harum veritatis itaque molestias repudiandae ea corporis maiores non obcaecati libero, unde ipsum consequuntur aut consectetur culpa magni omnis vero odio suscipit vitae dolor quod dignissimos perferendis eos? Consequuntur!</div>
+      </div> -->
+    </div>
+</div>
+
+</body>
+</html>

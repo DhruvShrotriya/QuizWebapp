@@ -30,13 +30,77 @@ const quiz =[
         ans:1
     },
     {
-        q:"raM1",
-        option:['<input>','<select>','<text>','<textarea>'],
+        q:"What is the correct HTML for inserting an image?",
+        option:[' <img src="image.jpg" alt="My Image">','<image source="image.jpg" alt="My Image">','<picture src="image.jpg" alt="My Image">','<image href="image.jpg" alt="My Image">'],
+        ans:0
+    },
+    {
+        q:" Which HTML element is used for defining the structure of an HTML document, such as headings and paragraphs?",
+        option:['<div>','<body>','<structure>','<head>'],
         ans:1
     },
     {
-        q:"RAM2",
-        option:['<input>','<select>','<text>','<textarea>'],
+        q:"What is the correct HTML for creating a hyperlink that opens in a new tab or window?",
+        option:['<a href="url" newtab>Link</a>','<a href="url" open="new">Link</a>','<a href="url" target="_blank">Link</a>','<a href="url" target="new">Link</a>'],
+        ans:2
+    },
+    {
+        q:"What does the HTML <b> element represent?",
+        option:['Browser window','Block of code','Bullet list','Bold text'],
+        ans:3
+    },
+    {
+        q:"In HTML, which tag is used for creating a line across the webpage?",
+        option:['<line>','<linebreak>','<hr>','<hline>'],
+        ans:2
+    },
+    {
+        q:"Which HTML attribute specifies the alternative text for an image if the image cannot be displayed?",
+        option:['title','alt','src','href'],
         ans:1
-    }
+    },
+    {
+        q:"What is the purpose of the HTML <head> element?",
+        option:['It contains the main content of the web page.',' It defines the structure of the web page.','It contains meta-information about the web page.','It displays the web pages footer.'],
+        ans:2
+    },
+    {
+        q:"Which HTML tag is used for creating a numbered list?",
+        option:['<list>','<nl>','<ul>','<ol>'],
+        ans:3
+    },
+    {
+        q:"What is the correct HTML for creating a hyperlink to an email address?",
+        option:['<a href="mailto:email@example.com">Email me</a>','<a link="email@example.com">Email me</a>','<email>email@example.com</email>',' <a href="email@example.com">Email me</a>'],
+        ans:0
+    },
+    {
+        q:"In HTML, what does the <i> element represent?",
+        option:['Inline code','Important text','Input field','Italicized text'],
+        ans:3
+    },
+    {
+        q:"What does HTML5 introduce for embedding audio and video content?",
+        option:['<media>','<sound>','<audio> and <video> elements','<multimedia>'],
+        ans:2
+    },
+    {
+        q:"What is the correct HTML for inserting a line break?",
+        option:['<lb>','<br>','<break>','<newline>'],
+        ans:1
+    },
+    {
+        q:"Which HTML tag is used for creating a table?",
+        option:['<table>','<grid>','<tab>','<t>'],
+        ans:1
+    },
+    {
+        q:"Which HTML element is used for creating a hyperlink?",
+        option:['<link>','<a>','<href>','<hyperlink>'],
+        ans:1
+    },
+
+
+
+
 ]

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start-Quiz</title>
+    <script>
+        function getQueryVariable(variable) {
+            const query = window.location.search.substring(1);
+            const vars = query.split("&");
+            for (let i = 0; i < vars.length; i++) {
+                const pair = vars[i].split("=");
+                if (decodeURIComponent(pair[0]) === variable) {
+                    return decodeURIComponent(pair[1]);
+                }
+            }
+            return null;
+        }
+        const name = getQueryVariable("qtype");
+        console.log(name);
+        function setResult(){
+            console.log("in result set");
+            document.getElementById("subj").innerHTML=name;
+            var quizlen=document.getElementById("quizlen").value;
+            
+        }
+        function startQuiz(){
+            var candname=document.getElementById("candname").value;
+            if(name=="HTML"){
+            window.location.href = `quiz.html?qtype=${encodeURIComponent(name)}&name=${encodeURIComponent(candname)}`;}
+            if(name=="CSS"){
+            window.location.href = `css_quiz.html?qtype=${encodeURIComponent(name)}&name=${encodeURIComponent(candname)}`;}
+            if(name=="JavaScript"){
+            window.location.href = `js_quiz.html?qtype=${encodeURIComponent(name)}&name=${encodeURIComponent(candname)}`;}
+            if(name=="Python"){
+            window.location.href = `python_quiz.html?qtype=${encodeURIComponent(name)}&name=${encodeURIComponent(candname)}`;}
+        }
+        
+        window.onload= function(){   
+        // getQueryVariable()
+        setResult()
+}
+    </script>
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #176B87;
+}
+
+#main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    box-shadow:
+    inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+    0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+.box{
+    width: 45%;
+    height: 450px;
+    box-shadow: 0px 0px 5px grey;
+    background-color: aliceblue;
+    border-radius: 20px;
+    box-shadow:
+    inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+    0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+    
+}
+
+#ques{
+    width: 100%;
+    margin: 8px 30px ;
+}
+#quesno{
+    color: #176B87;
+    font-weight: bold;
+    font-size: medium;
+    width: 90%;
+    margin: 20px 30px 0px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid black;
+}
+
+#ans{
+    width: 90%;
+    margin: 15px 40px;
+}
+
+.op{
+    background-color: rgb(205, 213, 219);
+    padding: 15px;
+    font-size: 16px;
+    line-height: 20px;
+    columns: #000000;
+    border-radius: 20px;
+    margin-bottom: 20px;
+
+}
+
+.btn{
+    margin: 7px 280px;
+    width: 110px;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 5px;
+    color: white;
+    background-color: #176B87;
+    align-items: center ;
+
+}
+input{
+    margin-left: 50px;
+    padding: 5px;
+    width: 80%;
+}
+.inp{
+    /* background-color: rgb(205, 213, 219); */
+    padding: 15px;
+    font-size: 16px;
+    line-height: 20px;
+    columns: #000000;
+    border-radius: 20px;
+    margin-bottom: 33px;;
+}
+
+    </style>
+
+</head>
+<body>
+    <div id="main">
+        <div class="box">
+            <div id="quesno" class="quesno">Quiz<br>
+                <!-- <hr> -->
+            </div>
+            <div id="ques"><h2><span id="subj">Sub</span> Quiz</h2></div>
+            <!-- <h2>Question</h2> -->
+            
+            <div id="ans">
+                <!-- <div class="op" id="tryop">  -->
+                <div class="inp">
+                    <label for="ans" id="l0">Name :</label> <input type="text" id="candname">
+                </div>
+                <!-- <div class="inp">
+                    <label for="ans" id="l0">Quiz Lenght:</label> <select name="ql" id="quizlen">
+                        <option value="10">10</option>
+                        <option value="15">15</option>
+                    </select>
+                </div> -->
+                <!-- </div> -->
+                <div class="op"> 
+                    <b>Instruction :</b><br>
+                    <li>For multiple-choice questions, click on the correct option.</li>
+                    <li>Since there's no option to go back, review each question carefully before moving on.</li>
+                    <li>Once you've answered all the questions or reached the end of the quiz, click the 'Submit' button. Once submitted, you cannot make changes.</li>
+                    <li>Maintain academic integrity by adhering to any honor code or rules provided by your institution</li>
+                </div>
+                
+                
+                
+            </div>
+            <button type="button" class="btn" onclick="startQuiz()">Start Quiz</button>
+            
+        </div>
+    </div>
+</body>
+</html>

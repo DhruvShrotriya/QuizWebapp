@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <link rel="stylesheet" href="css\result_style.css">
+    <script>
+     // Function to get the value from the URL query parameter
+     function getQueryVariable(variable) {
+            const query = window.location.search.substring(1);
+            const vars = query.split("&");
+            for (let i = 0; i < vars.length; i++) {
+                const pair = vars[i].split("=");
+                if (decodeURIComponent(pair[0]) === variable) {
+                    return decodeURIComponent(pair[1]);
+                }
+            }
+            return null;
+        }
+        const name = getQueryVariable("variable1");
+        const correct = getQueryVariable("variable2");
+        const quizlen = getQueryVariable("variable3");
+        const qtype = getQueryVariable("variable4");
+        console.log(name,correct,quizlen);
+        // Get the "value" query parameter and display it
+        // const updatedValue = getQueryVariable("value");
+        // console.log(updatedValue);
+        function setResult(){
+            console.log("in result set");
+            // document.getElementById("can").innerHTML=correct;
+            // document.getElementById('candname').innerHTML=updatedValue;
+            document.getElementById("candname").innerHTML=name;
+            document.getElementById("cans").innerHTML=correct;
+            document.getElementById("tq").innerHTML=quizlen;
+            var acc=parseFloat(parseInt(correct)/parseInt(quizlen))*100;
+            // console.log(acc);
+            document.getElementById("Accuracy").innerHTML=acc;
+            if(acc>=80){
+                document.getElementById("yesno").innerHTML="Yes";
+            }
+            else{
+                document.getElementById("yesno").innerHTML="No";
+                document.getElementById("btn").disabled=true;
+                document.getElementById("btn").style.backgroundColor="grey";
+            }
+        }
+
+        function certi(){
+            window.location.href = `certificate.html?qtype=${encodeURIComponent(qtype)}&name=${encodeURIComponent(name)}`;
+        }
+        // console.log(updatedValue);
+        // // document.getElementById("candname").textContent="Dhruv";
+        // console.log(updatedValue)
+        // if (updatedValue !== null) {
+        //     const valueElement = document.createElement("p");
+        //     valueElement.textContent = "Updated Value: " + updatedValue;
+        //     document.body.appendChild(valueElement);
+        // } else {
+        //     console.log("Value not found in the URL.");
+        // }
+        window.onload= function(){   
+        // getQueryVariable()
+        setResult()
+}
+
+    </script>
+    
+    
+</head>
+<body>
+    <div id="main">
+        <div class="box">
+            <div class="rHead">Result<br>
+                <!-- <hr> -->
+            </div>
+            <p id="try"></p>
+            <table>
+                <tr><td class="left">Name :</td> <td id="candname"></td></tr>
+                <tr><td class="left">Correct Answer :</td> <td id="cans">00</td></tr>
+                <tr><td class="left">Total Number of Question :</td> <td id="tq">00</td></tr>
+                <tr><td class="left">Accuracy :</td> <td id="Accuracy">00%</td></tr>
+                <tr><td class="left">Eligibal for certification :</td> <td id="yesno">Yes</td></tr>
+            </table>
+            
+            <a href="home.html"><button class="btn" onclick="trr()" >Go Home</button></a>
+            <button class="btn" onclick="certi()" id="btn">Get Certificate</button>
+            
+        </div>
+    </div>
+</body>
+</html>

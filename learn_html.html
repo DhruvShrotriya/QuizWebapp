@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Learn HTML</title>
+	<link rel="stylesheet" href="css\learn_style.css">
+	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="sidebar">
+        <h2>HTML</h2>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="#intro">What is HTML</a></li>
+            <li><a href="#tags"></i>HTML Tags</a></li>
+            <li><a href="#attribute"></i>HTML Attribute</a></li>
+            <li><a href="#heading"></i>HTML Heading</a></li>
+            
+        </ul> 
+    </div>
+    <div class="main_content">
+        <div class="header">Introduction</div>
+        <div class="info"> <p class="subhead"></p> <img src="assest\html-img.png" alt="html" style="float: right;" height="150px">
+        <p>HTML tutorial or HTML 5 tutorial provides basic and advanced concepts of HTML. Our HTML tutorial is developed for beginners and professionals. In our tutorial, every topic is given step-by-step so that you can learn it in a very easy way. If you are new in learning HTML, then you can learn HTML from basic to a professional level and after learning HTML with CSS and JavaScript you will be able to create your own interactive and dynamic website. But Now We will focus on HTML only in this tutorial.
+            The major points of HTML are given below:
+            <ol style="list-style-type: disc;">
+                <li>&nbsp;-&nbsp;&nbsp;&nbsp;   HTML stands for HyperText Markup Language.</li>
+                <li>&nbsp;-&nbsp;&nbsp;&nbsp;   HTML is used to create web pages and web applications.</li>
+                <li>&nbsp;-&nbsp;&nbsp;&nbsp;   HTML is widely used language on the web.</li>
+                <li>&nbsp;-&nbsp;&nbsp;&nbsp;   We can create a static website by HTML only.</li>
+                <li>&nbsp;-&nbsp;&nbsp;&nbsp;   Technically, HTML is a Markup language rather than a programming language.</li>
+            </ol>
+        </p></div>
+        <div class="header"><a name="intro">What is HTML</a></div>
+        <div class="info">
+            HTML is an acronym which stands for Hyper Text Markup Language which is used for creating web pages and web applications. Let's see what is meant by Hypertext Markup Language, and Web page.
+            <br><br><b>Hyper Text:</b> HyperText simply means "Text within Text." A text has a link within it, is a hypertext. Whenever you click on a link which brings you to a new webpage, you have clicked on a hypertext. HyperText is a way to link two or more web pages (HTML documents) with each other.
+<br><br>
+<b>Markup language:</b> A markup language is a computer language that is used to apply layout and formatting conventions to a text document. Markup language makes text more interactive and dynamic. It can turn text into images, tables, links, etc.
+<br><br>
+<b>Web Page:</b>A web page is a document which is commonly written in HTML and translated by a web browser. A web page can be identified by entering an URL. A Web page can be of the static or dynamic type. With the help of HTML only, we can create static web pages.
+<br>Hence, HTML is a markup language which is used for creating attractive web pages with the help of styling, and which looks in a nice format on a web browser. An HTML document is made of many HTML tags and each HTML tag contains different content.       
+</div>
+        <div class="header"><a name="tags">HTML Tags</a></div>
+        <div class="info">
+            <div class="sub">
+            HTML tags are like keywords which defines that how web browser will format and display the content. With the help of tags, a web browser can distinguish between an HTML content and a simple content. HTML tags contain three main parts: opening tag, content and closing tag. But some HTML tags are unclosed tags.
+
+            When a web browser reads an HTML document, browser reads it from top to bottom and left to right. HTML tags are used to create HTML documents and render their properties. Each HTML tags have different properties.
+            
+            An HTML file must have some essential tags so that web browser can differentiate between a simple text and HTML text. You can use as many tags you want as per your code requirement.
+        </div>
+        <div class="sub">
+            <p class="subhead"> Syntax </p>
+            <span class = "tagname">
+                <span class = "spes_tag"> < </span>
+                tagname
+                <span class = "spes_tag"> > </span>
+            </span>
+            "Content goes Here" 
+            <span class = "tagname">
+                <span class = "spes_tag"> < </span>
+                /tagname
+                <span class = "spes_tag"> > </span>
+            </span>
+
+            
+
+        </div>
+        <div class="sub"><p class="subhead">Examples of some HTML elements</p>
+        <span class = "tagname">
+            <span class = "spes_tag"> < </span>
+            h1
+            <span class = "spes_tag"> > </span>
+        </span>
+        "My first heading"
+        <span class = "tagname">
+            <span class = "spes_tag"> < </span>
+            /h1
+            <span class = "spes_tag"> > </span>
+        </span>
+        <br><span class = "tagname">
+            <span class = "spes_tag"> < </span>
+            p
+            <span class = "spes_tag"> > </span>
+        </span>
+        "Rachana ma'am is nice teacher"
+        <span class = "tagname">
+            <span class = "spes_tag"> < </span>
+            /p
+            <span class = "spes_tag"> > </span>
+        </span>
+    </div>
+    <div class="sub"><p class="subhead">Unclosed HTML Tags</p>
+        Some HTML tags are not closed, for example br and hr.
+        <br>
+        <span class = "spes_tag"> < </span>
+        br
+        <span class = "spes_tag"> > </span> Tag: br stands for break line, it breaks the line of the code.
+        <br>
+        <span class = "spes_tag"> < </span>
+        hr
+        <span class = "spes_tag"> > </span>Tag: hr stands for Horizontal Rule. This tag is used to put a line across the webpage.
+ 
+        </div>
+        </div>
+        <div class="header"><a name="attribute">HTML Attribute</a></div>
+        <div class="info">
+            <div class="sub">
+            <ul>
+                <li>HTML attributes are special words which provide additional information about the elements or attributes are the modifier of the HTML element.</li>
+                <li>Each element or tag can have attributes, which defines the behaviour of that element</li>
+                <li>Attributes should always be applied with start tag.</li>
+                <li>The Attribute should always be applied with its name and value pair.</li>
+                <li>You can add multiple attributes in one HTML element, but need to give space between two attributes.</li>
+            </ul>
+        </div>
+        <div class="sub">
+        <p class="subhead">Syntax</p>
+        <span class = "spes_tag"> < </span>
+        element attribute_name=<q>value</q>
+        <span class = "spes_tag"> > </span>content  <span class = "spes_tag"> < </span>
+        /element
+        <span class = "spes_tag"> > </span>
+        </div>
+        <div class="sub"><p class="subhead">Example</p>
+            <img src="assest\html-ele.png" alt="" style="float: right;" height="230px">
+            <pre>
+    &lt;html>  
+    &lt;head>  
+    &lt;/head>  
+    &lt;body>  
+    &lt;h1> This is Style attribute&lt;/h1>  
+    &lt;p style="height: 50px; color: blue">It will add style property in element&lt;/p>  
+    &lt;p style="color: red">It will change the color of content&lt;/p>  
+    &lt;/body>  
+    &lt;/html>  
+            </pre>
+        </div>
+        </div>
+        <div class="header"><a name="heading">HTML Heading</a></div>
+        <div class="info">
+            <div class="sub">
+                A HTML heading or HTML h tag can be defined as a title or a subtitle which you want to display on the webpage. When you place the text within the heading tags &lt;h1>........&lt;/h1>, it is displayed on the browser in the bold format and size of the text depends on the number of heading.
+            <p>There are six different HTML headings which are defined with the &lt;h1> to &lt;h6> tags, from highest level h1 (main heading) to the least level h6 (least important heading).
+            </p> <div>h1 is the largest heading tag and h6 is the smallest one. So h1 is used for most important heading and h6 is used for least important.
+            </div>
+            <div class="sub"><p class="subhead">Example</p>
+            <pre>
+  &lt;h1>Heading no. 1&lt;/h1>  
+  &lt;h2>Heading no. 2&lt;/h2>   
+  &lt;h3>Heading no. 3&lt;/h3>  
+  &lt;h4>Heading no. 4&lt;/h4>  
+  &lt;h5>Heading no. 5&lt;/h5>  
+  &lt;h6>Heading no. 6&lt;/h6>
+            </pre></div>
+            <div class="sub"><p class="subhead">Output</p>
+                <br>
+                <h1>Heading no. 1</h1>  
+                <h2>Heading no. 2</h2>  
+                <h3>Heading no. 3</h3>  
+                <h4>Heading no. 4</h4>  
+                <h5>Heading no. 5</h5>  
+                <h6>Heading no. 6</h6></div>
+            </div>
+        </div>
+        <!-- <div class="header"><a name=""></a></div> -->
+        <!-- <div class="header">Welcome!! Have a nice day.</div>  
+        <div class="info">
+          <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A sed nobis ut exercitationem atque accusamus sit natus officiis totam blanditiis at eum nemo, nulla et quae eius culpa eveniet voluptatibus repellat illum tenetur, facilis porro. Quae fuga odio perferendis itaque alias sint, beatae non maiores magnam ad, veniam tenetur atque ea exercitationem earum eveniet totam ipsam magni tempora aliquid ullam possimus? Tempora nobis facere porro, praesentium magnam provident accusamus temporibus! Repellendus harum veritatis itaque molestias repudiandae ea corporis maiores non obcaecati libero, unde ipsum consequuntur aut consectetur culpa magni omnis vero odio suscipit vitae dolor quod dignissimos perferendis eos? Consequuntur!</div>
+          <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A sed nobis ut exercitationem atque accusamus sit natus officiis totam blanditiis at eum nemo, nulla et quae eius culpa eveniet voluptatibus repellat illum tenetur, facilis porro. Quae fuga odio perferendis itaque alias sint, beatae non maiores magnam ad, veniam tenetur atque ea exercitationem earum eveniet totam ipsam magni tempora aliquid ullam possimus? Tempora nobis facere porro, praesentium magnam provident accusamus temporibus! Repellendus harum veritatis itaque molestias repudiandae ea corporis maiores non obcaecati libero, unde ipsum consequuntur aut consectetur culpa magni omnis vero odio suscipit vitae dolor quod dignissimos perferendis eos? Consequuntur!</div>
+          <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A sed nobis ut exercitationem atque accusamus sit natus officiis totam blanditiis at eum nemo, nulla et quae eius culpa eveniet voluptatibus repellat illum tenetur, facilis porro. Quae fuga odio perferendis itaque alias sint, beatae non maiores magnam ad, veniam tenetur atque ea exercitationem earum eveniet totam ipsam magni tempora aliquid ullam possimus? Tempora nobis facere porro, praesentium magnam provident accusamus temporibus! Repellendus harum veritatis itaque molestias repudiandae ea corporis maiores non obcaecati libero, unde ipsum consequuntur aut consectetur culpa magni omnis vero odio suscipit vitae dolor quod dignissimos perferendis eos? Consequuntur!</div>
+      </div> -->
+    </div>
+</div>
+
+</body>
+</html>

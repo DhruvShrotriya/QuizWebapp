@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css\home_style.css">
     <style>
 
         ul {
@@ -53,7 +54,7 @@ body{
   float: left;
 
 }
-div{
+div.banner{
   background-color: #EEEEEE;
   margin-top: 47px;
   margin-left: 0px;
@@ -69,23 +70,57 @@ div{
   margin-left: 20px;
   margin-top: 159px;
 }
+
     
     </style>
 </head>
 <body>
     <ul>
         <li><img src="assest\logo.png" height="40px" width="50px" style="margin: 5px 25px 5px 0px;"></li>
-        <li><a href="prac6a.html">HTML</a></li>
-        <li><a href="Practical.html">CSS</a></li>
-        <li><a href="1.html">JS</a></li>
+        <li><a href="learn_html.html">HTML</a></li>
+        <li><a href="learn_css.html">CSS</a></li>
+        <li><a href="lear_js.html">JS</a></li>
+        <li><a href="learn_python.html">Python</a></li>
         <li><a href="team.html">About</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
       </ul>
+      
+      <header class="site-header">
+        <img src="assest/quiz-2137664_1920.jpg" alt=""
+             style="width: 100%; height: 140%; margin: 0; padding: 0; left:0;">
+      </header>
     
-    <div>
-      <img src="assest\login.jpg" alt="header" height="500px" id="header">
-      <p id="banner">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus dolor placeat quasi reprehenderit aut est veritatis, eum vitae. Beatae repudiandae quia sapiente unde similique hic totam dolor officiis amet, accusantium illo maxime cum rem sint ipsum reiciendis vitae eos minima, recusandae consectetur distinctio obcaecati deserunt laborum aliquam. Repellendus assumenda adipisci sit voluptatibus. Exercitationem qui quisquam, quaerat voluptas quam illo magnam nisi omnis esse ea molestias earum reiciendis sit quae nam? Perferendis, eos similique porro saepe id praesentium repellendus odit quia totam harum dolorem, ducimus sit provident eum expedita exercitationem eveniet. Quam doloribus dignissimos consequuntur aperiam, quos hic voluptates eius amet?
-      </p>
-      </div>
-    
+    <table id="cards" style="margin-top: 50px; clear: both;">
+      <tr>
+        <td><div class="card"> <p class="cardHead"> <img src="assest\html-img.png" alt="" class="cardimg">&nbsp;  HTML</p>
+        <p class="desc">The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets and scripting languages such as JavaScript.
+
+        </p>
+        <div class="btncontainer"><a href="learn_html.html"><input type="button" value="Learmore" class="seemore"></a>
+         <a href="quiz_intro.html?qtype=HTML"> <button>Quiz</button> </a></div>    </div></td>
+      
+      </div></td>
+      <td><div class="card"> <p class="cardHead"> <img src="assest\css-img.png" alt="" class="cardimg">&nbsp;  CSS</p>
+        <p class="desc">Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language such as HTML or XML.  It is an essential technology for web development as it controls how web content is displayed on different devices and screen sizes.
+        </p>
+        <div class="btncontainer"><a href="learn_css.html"><input type="button" value="Learmore" class="seemore"></a>
+          <a href="quiz_intro.html?qtype=CSS"> <button>Quiz</button> </a></div>
+      </div></td>
+      </tr>
+      
+      <!-- next row -->
+      <tr>
+        <td><div class="card"> <p class="cardHead"> <img src="assest\js-img.png" alt="" class="cardimg" >&nbsp;  JavaScript</p>
+        <p class="desc">JavaScript, often abbreviated as JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. As of 2022, 98% of websites use JavaScript on the client side for webpage behavior, often incorporating third-party libraries.        </p>
+        <a href="lear_js.html"><div class="btncontainer"><input type="button" value="Learmore" class="seemore"></a>
+          <a href="quiz_intro.html?qtype=JavaScript">  <button>Quiz</button></div>  </a>  </div></td>
+      
+      </div></td>
+      <td><div class="card"> <p class="cardHead"> <img src="assest\Python-logo-notext.svg.png" alt=""  class="cardimg">&nbsp;  Python</p>
+        <p class="desc">Python is a high-level, interpreted programming language known for its simplicity, readability, and versatility.Python has become one of the most popular programming languages in the world and is widely used in various domains, including web development, data analysis, scientific computing, artificial intelligence, and more. </p>
+        <div class="btncontainer"><a href="learn_python.html"><input type="button" value="Learmore" class="seemore"></a>
+          <a href="quiz_intro.html?qtype=Python"> <button>Quiz</button></div>  </a>  </div></td>
+      </tr>
+    </table>
 </body>
 </html>

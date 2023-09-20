@@ -20,6 +20,25 @@
             border: 5px solid #333;
             text-align: center;
         }
+        .back-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: #333; /* Change the background color as desired */
+    color: white;
+    border-radius: 50%; /* Make it circular */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    text-decoration: none; /* Remove underline for the anchor */
+    font-size: 24px;
+    cursor: pointer;
+}
+.back-button:hover {
+    background-color: #0056b3; /* Change the background color on hover */
+}
         .certificate-header {
             margin-bottom: 20px;
         }
@@ -31,7 +50,7 @@
             font-size: 18px;
             margin-top: 20px;
         }
-        .participant-name {
+        #participant-name {
             font-size: 24px;
             font-weight: bold;
             margin-top: 20px;
@@ -45,9 +64,45 @@
             font-size: 20px;
         }
     </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    </script>
+    <script>
+         function getQueryVariable(variable) {
+            const query = window.location.search.substring(1);
+            const vars = query.split("&");
+            for (let i = 0; i < vars.length; i++) {
+                const pair = vars[i].split("=");
+                if (decodeURIComponent(pair[0]) === variable) {
+                    return decodeURIComponent(pair[1]);
+                }
+            }
+            return null;
+        }
+        const qtype = getQueryVariable("qtype");
+        const name=getQueryVariable("name");
+        console.log(name,qtype);
+
+        function setValue(){
+            // const date = new Date();
+            var today = new Date();
+            var date = today.getFullYear()+'/'+(today.getMonth()+1)+'/'+today.getDate();
+            document.getElementById("participant-name").innerHTML=name;
+            document.getElementById("quizt").innerHTML=qtype;
+            document.getElementById("date").innerHTML=date;
+        }
+       function download(){
+        console.log("IN DOWN")
+        var print=document.getElementById("certificate");
+        html2pdf(print);
+};
+        window.onload= function(){   
+        // getQueryVariable()
+        setValue()
+}
+    </script>
 </head>
 <body>
-    <div class="certificate">
+    <div class="certificate" id="certificate">
         <div class="certificate-header">
             <img src="assest\logo.png" alt="Certificate Logo" width="100">
             <h1 class="certificate-title">Certificate of Achievement</h1>
@@ -55,13 +110,12 @@
         <div class="certificate-details">
             This is to certify that
         </div>
-        <div class="participant-name">
+        <div id="participant-name">
             John Doe
         </div>
         <div class="quiz-details">
             has successfully completed the
-            <strong>Online Quiz on Web Development</strong>
-            on September 9, 2023
+            <strong>Online Quiz on <span id="quizt">Web Development</span></strong> on <span id="date"></span>
         </div>
         <div class="signature">
             <img src="assest\Signature_of_John_Smith_QC.png" alt="Signature" width="200"><br>
@@ -69,5 +123,8 @@
             CEO, Online Quiz Website
         </div>
     </div>
+    <button id="downloadButton" onclick="download()">Download as PDF</button>
+    <a href="home.html" class="back-button">&#8592;</a>
+
 </body>
 </html>

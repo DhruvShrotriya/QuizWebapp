@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Learn JavaScript</title>
+	<link rel="stylesheet" href="css\learn_style.css">
+	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="sidebar">
+        <h2>JS</h2>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="#intro">What is JavaScript</a></li>
+            <li><a href="#syntax"></i>JS Datatype</a></li>
+            <li><a href="#attribute"></i>Operation</a></li>
+            <li><a href="#model"></i>JavaScript Math</a></li>
+            
+        </ul> 
+    </div>
+    <div class="main_content">
+        <div class="header">Introduction</div>
+        <div class="info" style="height: 170px;"> <p class="subhead"></p> <img src="assest/js-img.png" alt="csslogo" style="float: right;" height="150px">
+        <p>Our JavaScript Tutorial is designed for beginners and professionals both. JavaScript is used to create client-side dynamic pages.
+
+            JavaScript is an object-based scripting language which is lightweight and cross-platform.
+            
+            JavaScript is not a compiled language, but it is a translated language. The JavaScript Translator (embedded in the browser) is responsible for translating the JavaScript code for the web browser.
+            
+        </p></div>
+        <div class="header"><a name="intro">What is JavaScript</a></div>
+        <div class="info">
+            <div class="sub">
+                JavaScript (js) is a light-weight object-oriented programming language which is used by several websites for scripting the webpages. It is an interpreted, full-fledged programming language that enables dynamic interactivity on websites when applied to an HTML document. It was introduced in the year 1995 for adding programs to the webpages in the Netscape Navigator browser. Since then, it has been adopted by all other graphical web browsers. With JavaScript, users can build modern web applications to interact directly without reloading the page every time. The traditional website uses js to provide several forms of interactivity and simplicity.
+
+                Although, JavaScript has no connectivity with Java programming language. The name was suggested and provided in the times when Java was gaining popularity in the market. In addition to web browsers, databases such as CouchDB and MongoDB uses JavaScript as their scripting and query language.
+</div>
+<div class="sub"><p class="subhead">Features of JavaScript</p>
+   <ol>
+    <li>&nbsp;&nbsp;1. All popular web browsers support JavaScript as they provide built-in execution environments.</li>
+    <li>&nbsp;&nbsp;2. JavaScript follows the syntax and structure of the C programming language. Thus, it is a structured programming language.</li>
+    <li>&nbsp;&nbsp;3. JavaScript is a weakly typed language, where certain types are implicitly cast (depending on the operation).</li>
+    <li>&nbsp;&nbsp;4. JavaScript is an object-oriented programming language that uses prototypes rather than using classes for inheritance.</li>
+    <li>&nbsp;&nbsp;5. It is a light-weighted and interpreted language.</li>
+    <li>&nbsp;&nbsp;6. It is a case-sensitive language.</li>
+    <li>&nbsp;&nbsp;7. It provides good control to the users over the web browsers.</li>
+   </ol>
+
+</div>
+        </div>
+        <div class="header"><a name="syntax">JS Datatype</a></div>
+        <div class="info">
+            <div class="sub">
+                JavaScript provides different data types to hold different types of values. There are two types of data types in JavaScript.
+<ul><li>&nbsp;&nbsp;1. Primitive data type</li>
+<li>&nbsp;&nbsp;2. Non-primitive (reference) data type
+    </li></ul>
+    JavaScript is a dynamic type language, means you don't need to specify type of the variable because it is dynamically used by JavaScript engine. You need to use var here to specify the data type. It can hold any type of values such as numbers, strings etc. For example:
+    <pre >
+var a=40;//holding number  
+var b="Rahul";//holding string  </pre>            
+</div>
+        <div class="sub">
+            <p class="subhead"> JavaScript primitive data types </p>
+            There are five types of primitive data types in JavaScript. They are as follows:
+            <table class="alt">
+                <tbody><tr><th>Data Type</th><th>Description</th></tr>
+                <tr><td>String</td><td>represents sequence of characters e.g. "hello"</td></tr>
+                <tr><td>Number</td><td>represents numeric values e.g. 100</td></tr>
+                <tr><td>Boolean</td><td>represents boolean value either false or true</td></tr>
+                <tr><td>Undefined</td><td>represents undefined value</td></tr>
+                <tr><td>Null</td><td>represents null i.e. no value at all</td></tr>
+                </tbody></table>
+        </div>
+        <div class="sub">
+            <p class="subhead">JavaScript non-primitive data types</p>The non-primitive data types are as follows:
+            <table class="alt">
+                <tbody><tr><th>Data Type</th><th>Description</th></tr>
+                <tr><td>Object</td><td>represents instance through which we can access members</td></tr>
+                <tr><td>Array</td><td>represents group of similar values</td></tr>
+                <tr><td>RegExp</td><td>represents regular expression</td></tr>
+                </tbody></table>
+
+        </div>
+        
+        </div>
+        <div class="header"><a name="attribute">JavaScript Operators</a></div>
+        <div class="info">
+            <div class="sub">JavaScript operators are symbols that are used to perform operations on operands.br <br>For example:
+                <pre>var sum=10+20;  </pre>
+                <p>Here, + is the arithmetic operator and = is the assignment operator.</p>
+                <p>There are following types of operators in JavaScript.</p>
+                <ol>
+                    <li>&nbsp;&nbsp;1. Arithmetic Operators</li>
+                    <li>&nbsp;&nbsp;2. Comparison (Relational) Operators</li>
+                    <li>&nbsp;&nbsp;3. Bitwise Operators</li>
+                    <li>&nbsp;&nbsp;4. Logical Operators</li>
+                    <li>&nbsp;&nbsp;5. Assignment Operators</li>
+                    <li>&nbsp;&nbsp;6. Special Operators</li>
+                    </ol>
+                
+        </div>
+        <div class="sub">
+        <p class="subhead">JavaScript Arithmetic Operators</p>
+        Arithmetic operators are used to perform arithmetic operations on the operands. The following operators are known as JavaScript arithmetic operators.
+        <table class="alt">
+            <tbody><tr><th>Operator</th><th>Description</th><th>Example</th></tr>
+            <tr><td>+</td><td>Addition</td><td>10+20 = 30</td></tr>
+            <tr><td>-</td><td>Subtraction</td><td>20-10 = 10</td></tr>
+            <tr><td>*</td><td>Multiplication</td><td>10*20 = 200</td></tr>
+            <tr><td>/</td><td>Division</td><td> 20/10 = 2</td></tr>
+            <tr><td>%</td><td>Modulus (Remainder)</td><td>20%10 = 0</td></tr>
+            <tr><td>++</td><td>Increment</td><td>var a=10; a++; Now a = 11</td></tr>
+            <tr><td>--</td><td>Decrement</td><td>var a=10; a--; Now a = 9</td></tr>
+            </tbody></table>
+        </div>
+        <div class="sub"><p class="subhead">JavaScript Comparison Operators</p>
+            The JavaScript comparison operator compares the two operands. The comparison operators are as follows:
+            <table class="alt">
+                <tbody><tr><th>Operator</th><th>Description</th><th>Example</th></tr>
+                <tr><td>==</td><td>Is equal to</td><td>10==20 = false</td></tr>
+                <tr><td>===</td><td>Identical (equal and of same type)</td><td>10==20 = false</td></tr>
+                <tr><td>!=</td><td>Not equal to</td><td>10!=20 = true</td></tr>
+                <tr><td>!==</td><td>Not Identical</td><td> 20!==20 = false</td></tr>
+                <tr><td>&gt;</td><td>Greater than</td><td>20&gt;10 = true</td></tr>
+                <tr><td>&gt;=</td><td>Greater than or equal to</td><td>20&gt;=10 = true</td></tr>
+                <tr><td>&lt;</td><td>Less than</td><td>20&lt;10 = false</td></tr>
+                <tr><td>&lt;=</td><td>Less than or equal to</td><td>20&lt;=10 = false</td></tr>
+                </tbody></table>
+        </div>
+        <div class="sub"><p class="subhead">JavaScript Logical Operators</p>The following operators are known as JavaScript logical operators.
+            <table class="alt">
+                <tbody><tr><th>Operator</th><th>Description</th><th>Example</th></tr>
+                <tr><td>&amp;&amp;</td><td>Logical AND</td><td>(10==20 &amp;&amp; 20==33) = false</td></tr>
+                <tr><td>||</td><td>Logical OR</td><td>(10==20 || 20==33) = false</td></tr>
+                <tr><td>!</td><td>Logical Not</td><td>!(10==20) = true</td></tr>
+                </tbody></table>
+        </div>
+        <div class="header"><a name="model">JS Math</a></div>
+        <div class="info">
+            <div class="sub">
+                
+                The JavaScript math object provides several constants and methods to perform mathematical operation. Unlike date object, it doesn't have constructors.
+                
+            </div>
+            <div class="sub"><p class="subhead">JavaScript Math Methods</p>Let's see the list of JavaScript Math methods with description.
+                <table class="alt">
+                    <tbody><tr>
+                    <th>Methods</th>
+                    <th>Description</th>
+                    </tr>
+                    <tr>
+                    <td>abs()</a></td>
+                    <td>It returns the absolute value of the given number.</td>
+                    </tr>
+                    <tr>
+                    <td>acos()</a></td>
+                    <td>It returns the arccosine of the given number in radians.</td>
+                    </tr>
+                    <tr>
+                    <td>asin()</a></td>
+                    <td>It returns the arcsine of the given number in radians.</td>
+                    </tr>
+                    <tr>
+                    <td>atan()</a></td>
+                    <td>It returns the arc-tangent of the given number in radians.</td>
+                    </tr>
+                    <tr>
+                    <td>cbrt()</a></td>
+                    <td>It returns the cube root of the given number.</td>
+                    </tr>
+                    <tr>
+                    <td>ceil()</a></td>
+                    <td>It returns a smallest integer value, greater than or equal to the given number.</td>
+                    </tr>
+                    <tr>
+                    <td>cos()</a></td>
+                    <td>It returns the cosine of the given number.</td>
+                    </tr>
+                    <tr>
+                    <td>cosh()</a></td>
+                    <td>It returns the hyperbolic cosine of the given number.</td>
+                    </tr>
+                    <tr>
+                    <td>exp()</a></td>
+                    <td>It returns the exponential form of the given number.</td>
+                    </tr>
+                    <tr>
+                    <td>floor()</a></td>
+                    <td>It returns largest integer value, lower than or equal to the given number.</td>
+                    </tr>
+                    <tr>
+                    <td>hypot()</a></td>
+                    <td>It returns square root of sum of the squares of given numbers.</td>
+                    </tr>
+                    <tr>
+                    <td>log()</a></td>
+                    <td>It returns natural logarithm of a number.</td>
+                    </tr>
+                    <tr>
+                    <td>max()</a></td>
+                    <td>It returns maximum value of the given numbers.</td>
+                    </tr>
+                    <tr>
+                    <td>min()</a></td>
+                    <td>It returns minimum value of the given numbers.</td>
+                    </tr>
+                    <tr>
+                    <td>pow()</a></td>
+                    <td>It returns value of base to the power of exponent.</td>
+                    </tr>
+                    <tr>
+                    <td>random()</a></td>
+                    <td>It returns random number between 0 (inclusive) and 1 (exclusive).</td>
+                    </tr>
+                    <tr>
+                    <td>round()</a></td>
+                    <td>It returns closest integer value of the given number.</td>
+                    </tr>
+                    <tr>
+                    <td>sign()</a></td>
+                    <td>It returns the sign of the given number</td>
+                    </tr>
+                    <tr>
+                    <td>sin()</a></td>
+                    <td>It returns the sine of the given number.</td>
+                    </tr>
+                    <tr>
+                    <td>sinh()</a></td>
+                    <td>It returns the hyperbolic sine of the given number.</td>
+                    </tr>
+                    <tr>
+                    <td>sqrt()</a></td>
+                    <td>It returns the square root of the given number</td>
+                    </tr>
+                    <tr>
+                    <td>tan()</a></td>
+                    <td>It returns the tangent of the given number.</td>
+                    </tr>
+                    <tr>
+                    <td>tanh()</a></td>
+                    <td>It returns the hyperbolic tangent of the given number.</td>
+                    </tr>
+                    <tr>
+                    <td>trunc()</a></td>
+                    <td>It returns an integer part of the given number.</td>
+                    </tr>
+                    </tbody></table>
+            </div>
+            <div class="sub"><p class="subhead">Math.random()</p>The JavaScript math.random() method returns the random number between 0 to 1.
+            <pre>Random Number is: &lt;span id="p2">&lt;/span>    
+&lt;script>    
+document.getElementById('p2').innerHTML=Math.random();    
+&lt;/script>   
+                </pre>
+                <b>Output</b>
+                <pre>Random Number is: <span id="p2"></span>    
+                <script>    
+                document.getElementById('p2').innerHTML=Math.random();    
+                </script>   
+                </pre>
+            </div>
+            <div class="sub"><p class="subhead">Math.round(n)</p>The JavaScript math.round(n) method returns the rounded integer nearest for the given number. If fractional part is equal or greater than 0.5, it goes to upper value 1 otherwise lower value 0. For example 4 for 3.7, 3 for 3.3, 6 for 5.9 etc.
+                <pre>Round of 4.3 is: &lt;span id="p6">&lt;/span>&lt;br>    
+Round of 4.7 is: &lt;span id="p7">&lt;/span>    
+&lt;script>    
+document.getElementById('p6').innerHTML=Math.round(4.3);   
+document.getElementById('p7').innerHTML=Math.round(4.7);    
+&lt;/script></pre>
+                    <b>Output</b><br>
+                    <pre>Round of 4.3 is: <span id="p6"></span><br>Round of 4.7 is: <span id="p7"></span>    
+                        <script>    
+                        document.getElementById('p6').innerHTML=Math.round(4.3);   
+                        document.getElementById('p7').innerHTML=Math.round(4.7);    
+                        </script>  
+                    </pre>
+                </div>
+        </div>
+        <!-- <div class="header"><a name=""></a></div> -->
+        <!-- <div class="header">Welcome!! Have a nice day.</div>  
+        <div class="info">
+          <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A sed nobis ut exercitationem atque accusamus sit natus officiis totam blanditiis at eum nemo, nulla et quae eius culpa eveniet voluptatibus repellat illum tenetur, facilis porro. Quae fuga odio perferendis itaque alias sint, beatae non maiores magnam ad, veniam tenetur atque ea exercitationem earum eveniet totam ipsam magni tempora aliquid ullam possimus? Tempora nobis facere porro, praesentium magnam provident accusamus temporibus! Repellendus harum veritatis itaque molestias repudiandae ea corporis maiores non obcaecati libero, unde ipsum consequuntur aut consectetur culpa magni omnis vero odio suscipit vitae dolor quod dignissimos perferendis eos? Consequuntur!</div>
+          <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A sed nobis ut exercitationem atque accusamus sit natus officiis totam blanditiis at eum nemo, nulla et quae eius culpa eveniet voluptatibus repellat illum tenetur, facilis porro. Quae fuga odio perferendis itaque alias sint, beatae non maiores magnam ad, veniam tenetur atque ea exercitationem earum eveniet totam ipsam magni tempora aliquid ullam possimus? Tempora nobis facere porro, praesentium magnam provident accusamus temporibus! Repellendus harum veritatis itaque molestias repudiandae ea corporis maiores non obcaecati libero, unde ipsum consequuntur aut consectetur culpa magni omnis vero odio suscipit vitae dolor quod dignissimos perferendis eos? Consequuntur!</div>
+          <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A sed nobis ut exercitationem atque accusamus sit natus officiis totam blanditiis at eum nemo, nulla et quae eius culpa eveniet voluptatibus repellat illum tenetur, facilis porro. Quae fuga odio perferendis itaque alias sint, beatae non maiores magnam ad, veniam tenetur atque ea exercitationem earum eveniet totam ipsam magni tempora aliquid ullam possimus? Tempora nobis facere porro, praesentium magnam provident accusamus temporibus! Repellendus harum veritatis itaque molestias repudiandae ea corporis maiores non obcaecati libero, unde ipsum consequuntur aut consectetur culpa magni omnis vero odio suscipit vitae dolor quod dignissimos perferendis eos? Consequuntur!</div>
+      </div> -->
+    </div>
+</div>
+
+</body>
+</html>

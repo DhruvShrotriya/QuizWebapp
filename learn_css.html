@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Learn HTML</title>
+	<link rel="stylesheet" href="css\learn_style.css">
+	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="sidebar">
+        <h2>CSS</h2>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="#intro">What is CSS</a></li>
+            <li><a href="#syntax"></i>CSS Syntax</a></li>
+            <li><a href="#attribute"></i>CSS Selector</a></li>
+            <li><a href="#model"></i>Box Model</a></li>
+            
+        </ul> 
+    </div>
+    <div class="main_content">
+        <div class="header">Introduction</div>
+        <div class="info"> <p class="subhead"></p> <img src="assest\css-img.png" alt="csslogo" style="float: right;" height="150px">
+        <p>CSS tutorial or CSS 3 tutorial provides basic and advanced concepts of CSS technology. Our CSS tutorial is developed for beginners and professionals. The major points of CSS are given below:
+            <ol style="list-style-type: disc;">
+                <li>&nbsp;-&nbsp;&nbsp;&nbsp;   CSS stands for Cascading Style Sheet.
+                </li>
+                <li>&nbsp;-&nbsp;&nbsp;&nbsp;   CSS is used to design HTML tags.
+                </li>
+                <li>&nbsp;-&nbsp;&nbsp;&nbsp;   CSS is a widely used language on the web.
+                </li>
+                <li>&nbsp;-&nbsp;&nbsp;&nbsp;   HTML, CSS and JavaScript are used for web designing. It helps the web designers to apply style on HTML tags.
+                    .</li>
+            </ol>
+        </p></div>
+        <div class="header"><a name="intro">What is CSS</a></div>
+        <div class="info">
+            <div class="sub">
+            CSS stands for Cascading Style Sheets. It is a style sheet language which is used to describe the look and formatting of a document written in markup language. It provides an additional feature to HTML. It is generally used with HTML to change the style of web pages and user interfaces. It can also be used with any kind of XML documents including plain XML, SVG and XUL.
+<br>
+CSS is used along with HTML and JavaScript in most websites to create user interfaces for web applications and user interfaces for many mobile applications.
+</div>
+<div class="sub"><p class="subhead">Why use CSS</p>
+    These are the three major benefits of CSS: <br> <b>1) Solves a big problem
+    </b><br>
+    Before CSS, tags like font, color, background style, element alignments, border and size had to be repeated on every web page. This was a very long process. For example: If you are developing a large website where fonts and color information are added on every single page, it will be become a long and expensive process. CSS was created to solve this problem. It was a W3C recommendation.
+    <br><b>2) Saves a lot of time</b><br>
+    CSS style definitions are saved in external CSS files so it is possible to change the entire website by changing just one file.
+    <br><b>3) Provide more attributes</b><br>
+    CSS provides more detailed attributes than plain HTML to define the look and feel of the website.
+
+
+</div>
+        </div>
+        <div class="header"><a name="syntax">CSS Syntax</a></div>
+        <div class="info">
+            <div class="sub">
+                <p>A CSS rule set contains a selector and a declaration block.</p>
+                <img src="https://static.javatpoint.com/csspages/images/css-syntax.png" alt="" style="float: right;" height="185px">
+                <p><b>Selector: </b> Selector indicates the HTML element you want to style. It could be any tag like &lt;h1>, &lt;title> etc.</p>
+                <p><b>Declaration Block:</b> The declaration block can contain one or more declarations separated by a semicolon. For the above example, there are two declarations:</p>
+                <p>&nbsp;&nbsp;&nbsp;    1. color: yellow;<br>
+                    &nbsp;&nbsp;&nbsp;    2. font-size: 11 px;</p>
+                    Each declaration contains a property name and value, separated by a colon.
+                <p><b>Property:</b> A Property is a type of attribute of HTML element. It could be color, border etc.</p>
+                <p><b>Value:</b> Values are assigned to CSS properties. In the above example, value "yellow" is assigned to color property.
+
+                </p>
+            </div>
+        <div class="sub">
+            <p class="subhead"> Syntax </p>
+            &nbsp;&nbsp;Selector{Property1: value1; Property2: value2; ..........;}  
+        </div>
+        
+        </div>
+        <div class="header"><a name="attribute">CSS Selector</a></div>
+        <div class="info">
+            <div class="sub">
+                CSS selectors are used to select the content you want to style. Selectors are the part of CSS rule set. CSS selectors select HTML elements according to its id, class, type, attribute etc.
+                <br>There are several different types of selectors in CSS.<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;1.  CSS Element Selector <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;2. CSS Id Selector <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;3. CSS Class Selector <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;4. CSS Universal Selector <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;5. CSS Group Selector <br>
+
+
+        </div>
+        <div class="sub">
+        <p class="subhead">1) CSS Element Selector</p>
+        <pre>
+    &lt;html>  
+    &lt;head>  
+    &lt;style>  
+    p{  
+        text-align: center;  
+        color: blue;  
+    }   
+    &lt;/style>  
+    &lt;/head>  
+    &lt;body>  
+    &lt;p>This style will be applied on every paragraph.&lt;/p>  
+    &lt;p id="para1">Me too!&lt;/p>  
+    &lt;p>And me!&lt;/p>  
+    &lt;/body>  
+    &lt;/html>
+        </pre>
+        </div>
+        <div class="sub"><p class="subhead"> CSS Id Selector</p>
+            The id selector selects the id attribute of an HTML element to select a specific element. An id is always unique within the page so it is chosen to select a single, unique element.
+            It is written with the hash character (#), followed by the id of the element.
+            Let?s take an example with the id "para1".
+        <pre>
+            &lt;html>  
+            &lt;head>  
+            &lt;style>  
+            #para1 {  
+                text-align: center;  
+                color: blue;  
+            }  
+            &lt;/style>  
+            &lt;/head>  
+            &lt;body>  
+            &lt;p id="para1">Hello Javatpoint.com&lt;/p>  
+            &lt;p>This paragraph will not be affected.&lt;/p>  
+            &lt;/body>  
+            &lt;/html>    
+        </pre>
+        </div>
+        
+        <div class="header"><a name="model">CSS BOX MODEL</a></div>
+        <div class="info">
+            <div class="sub">
+                
+                In CSS, the term "box model" is used when talking about design and layout.
+                The CSS box model is essentially a box that wraps around every HTML element. <br> It consists of: margins, borders, padding, and the actual content. The image below illustrates the box model:
+                Explanation of the different parts: <br>
+                <b>Content</b>- The content of the box, where text and images appear <br> 
+                <b>Padding</b>- Clears an area around the content. The padding is transparent <br>
+                <b>Border</b>- A border that goes around the padding and content <br>
+                <b>Margin</b>- Clears an area outside the border. The margin is transparent <br>
+                <img src="assest/boxmodel.png" alt="" width="650px" >
+            </div>
+        </div>
+        <!-- <div class="header"><a name=""></a></div> -->
+        <!-- <div class="header">Welcome!! Have a nice day.</div>  
+        <div class="info">
+          <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A sed nobis ut exercitationem atque accusamus sit natus officiis totam blanditiis at eum nemo, nulla et quae eius culpa eveniet voluptatibus repellat illum tenetur, facilis porro. Quae fuga odio perferendis itaque alias sint, beatae non maiores magnam ad, veniam tenetur atque ea exercitationem earum eveniet totam ipsam magni tempora aliquid ullam possimus? Tempora nobis facere porro, praesentium magnam provident accusamus temporibus! Repellendus harum veritatis itaque molestias repudiandae ea corporis maiores non obcaecati libero, unde ipsum consequuntur aut consectetur culpa magni omnis vero odio suscipit vitae dolor quod dignissimos perferendis eos? Consequuntur!</div>
+          <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A sed nobis ut exercitationem atque accusamus sit natus officiis totam blanditiis at eum nemo, nulla et quae eius culpa eveniet voluptatibus repellat illum tenetur, facilis porro. Quae fuga odio perferendis itaque alias sint, beatae non maiores magnam ad, veniam tenetur atque ea exercitationem earum eveniet totam ipsam magni tempora aliquid ullam possimus? Tempora nobis facere porro, praesentium magnam provident accusamus temporibus! Repellendus harum veritatis itaque molestias repudiandae ea corporis maiores non obcaecati libero, unde ipsum consequuntur aut consectetur culpa magni omnis vero odio suscipit vitae dolor quod dignissimos perferendis eos? Consequuntur!</div>
+          <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A sed nobis ut exercitationem atque accusamus sit natus officiis totam blanditiis at eum nemo, nulla et quae eius culpa eveniet voluptatibus repellat illum tenetur, facilis porro. Quae fuga odio perferendis itaque alias sint, beatae non maiores magnam ad, veniam tenetur atque ea exercitationem earum eveniet totam ipsam magni tempora aliquid ullam possimus? Tempora nobis facere porro, praesentium magnam provident accusamus temporibus! Repellendus harum veritatis itaque molestias repudiandae ea corporis maiores non obcaecati libero, unde ipsum consequuntur aut consectetur culpa magni omnis vero odio suscipit vitae dolor quod dignissimos perferendis eos? Consequuntur!</div>
+      </div> -->
+    </div>
+</div>
+
+</body>
+</html>
