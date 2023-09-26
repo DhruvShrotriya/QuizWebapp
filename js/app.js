@@ -1,11 +1,11 @@
-console.log(quiz)
-
+// console.log(quiz)
+//App version 2.0
 const questionNumber = document.getElementById("quesno");
 const quesText = document.getElementById("ques");
 const optionCont= document.getElementById("ans");
 const quizlen=10;
 let res={
-    name: "Dhruv",
+    name: "Dhruv Shrotiya",
     age: 18,
     corr: 0,
     total: 0

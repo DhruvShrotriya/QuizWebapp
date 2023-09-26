@@ -18,7 +18,7 @@ body{
 .maindivB{
     display: flex;
     padding: 50px ;
-    /* margin: 52px; */
+    
 }
 
 .maindivA{
@@ -135,18 +135,18 @@ body{
     align-items: center;
     width: 50px;
     height: 50px;
-    background-color: #333; /* Change the background color as desired */
+    background-color: #333;
     color: white;
-    border-radius: 50%; /* Make it circular */
+    border-radius: 50%; 
     position: fixed;
     bottom: 20px;
     right: 20px;
-    text-decoration: none; /* Remove underline for the anchor */
+    text-decoration: none;
     font-size: 24px;
     cursor: pointer;
 }
 .back-button:hover {
-    background-color: #0056b3; /* Change the background color on hover */
+    background-color: #0056b3; 
 }
 img{
     margin-left: 15px;
